@@ -1,0 +1,25 @@
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin_version"
+
+    //Dagger
+    implementation "com.google.dagger:dagger:$versions.dagger"
+    implementation "com.google.dagger:hilt-android:$versions.hiltAndroid"
+    implementation "androidx.hilt:hilt-common:$versions.hilt"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$versions.hilt"
+    kapt "com.google.dagger:dagger-compiler:$versions.dagger"
+    kapt "com.google.dagger:hilt-android-compiler:$versions.hiltAndroid"
+    kapt "androidx.hilt:hilt-compiler:$versions.hilt"
+
+    implementation "io.reactivex.rxjava3:rxjava:$versions.rxjava"
+    implementation("io.reactivex.rxjava3:rxkotlin:$versions.rxKtx")
+
+    implementation("com.squareup.okhttp3:okhttp:${versions.okhttp}")
+    implementation "com.google.code.gson:gson:${versions.gson}"
+
+    testImplementation "androidx.arch.core:core-testing:${versions.coreTesting}"
+    testImplementation "org.mockito:mockito-core:${versions.mockito}"
+    testImplementation "junit:junit:${versions.junit}"
+    testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:${versions.mockitoKotlin}")
+    testImplementation("org.hamcrest:hamcrest-library:${versions.hamcrest}")
+    testImplementation("com.squareup.okhttp3:mockwebserver:$versions.okhttp")
+}
